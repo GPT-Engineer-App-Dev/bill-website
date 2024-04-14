@@ -10,16 +10,10 @@ const Index = () => {
             Bill Clinton
           </Heading>
           <HStack spacing={8}>
-            <Button 
-              as={Link}
-              to="/accomplishments"
-              variant="ghost" 
-              color="white" 
-              _hover={{ bg: "whiteAlpha.200" }}
-            >
+            <Button as={Link} to="/accomplishments" variant="ghost" color="white" _hover={{ bg: "whiteAlpha.200" }}>
               Accomplishments
             </Button>
-            <Button variant="ghost" color="white" _hover={{ bg: "whiteAlpha.200" }}>
+            <Button as={Link} to="/philanthropy" variant="ghost" color="white" _hover={{ bg: "whiteAlpha.200" }}>
               Philanthropy
             </Button>
             <Button variant="ghost" color="white" _hover={{ bg: "whiteAlpha.200" }}>
