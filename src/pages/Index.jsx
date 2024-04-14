@@ -1,4 +1,4 @@
-import { Box, VStack, HStack, Heading, Text, Image, Button } from "@chakra-ui/react";
+import { Box, VStack, HStack, Heading, Text, Image, Button, Link } from "@chakra-ui/react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Index = () => {
@@ -10,7 +10,13 @@ const Index = () => {
             Bill Clinton
           </Heading>
           <HStack spacing={8}>
-            <Button variant="ghost" color="white" _hover={{ bg: "whiteAlpha.200" }}>
+            <Button 
+              as={Link}
+              to="/accomplishments"
+              variant="ghost" 
+              color="white" 
+              _hover={{ bg: "whiteAlpha.200" }}
+            >
               Accomplishments
             </Button>
             <Button variant="ghost" color="white" _hover={{ bg: "whiteAlpha.200" }}>
